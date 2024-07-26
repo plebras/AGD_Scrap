@@ -13,6 +13,7 @@ Vous pouvez vous aussi vous amuser avec ce logiciel, il y a des tutos en ligne e
 Pour faire fonctionner le script : 
 
 pip install requirements.txt
+
 python scrap.py
 
 Et voilà !
