@@ -5,10 +5,17 @@ puis de les visiter afin d'également récupérer les liens qu'ils contiennent. 
 il est fait mention de William sur la page de JC et inversement. C'est ça mais avec toutes les pages et tout l'univers
 d'AGD jusqu'à maintenant.
 
-Le script génère 2 csv qui sont ensuite injecté dans le logiciel (open source) Gephi
+Le script génère 2 csv(un pour les pages et un pour les liens) qui sont ensuite injectés dans le logiciel (open source) Gephi
 https://gephi.org/users/download/
 
 Vous pouvez vous aussi vous amuser avec ce logiciel, il y a des tutos en ligne et c'est très bien fait !
+
+Pour faire fonctionner le script : 
+
+pip install requirements.txt
+python scrap.py
+
+Et voilà !
 
 Ce travail ne serait pas possible sans tous ceux qui contribuent au wiki, merci à eux !
 
