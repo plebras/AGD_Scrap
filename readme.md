@@ -1,12 +1,16 @@
+> Code d'origine: (https://github.com/Armand-G/AGD_Scrap
+
 Boomjour !
 
-Cet outil permet de scrap (en français récupérer), tous les liens contenus sur chaque page du wiki AGD,
-puis de les visiter afin d'également récupérer les liens qu'ils contiennent. Comme William est marié avec JC,
-il est fait mention de William sur la page de JC et inversement. C'est ça mais avec toutes les pages et tout l'univers
-d'AGD jusqu'à maintenant.
+Cet outil permet de scrap (en français récupérer), les liens de personnages contenus dans le wiki AG&D.
+Chaque liens est ensuite visité pour définir si il y a un lien entre personnages.
+Par exemple: comme William est marié avec JC, il est fait mention de William sur la page de JC et inversement.
 
-Le script génère 2 csv(un pour les pages et un pour les liens) qui sont ensuite injectés dans le logiciel (open source) Gephi
-https://gephi.org/users/download/
+Le script génère 2 csv(un pour les pages et un pour les liens).
+
+Les 2 csv peuvent ensuite etre visualisés:
+ - avec Gephi (open source) Gephi https://gephi.org/users/download/
+ - avec D3 [exemple](https://observablehq.com/d/23181d191ff327d5)
 
 Vous pouvez vous aussi vous amuser avec ce logiciel, il y a des tutos en ligne et c'est très bien fait !
 
@@ -20,6 +24,8 @@ Et voilà !
 
 Ce travail ne serait pas possible sans tous ceux qui contribuent au wiki, merci à eux !
 
-Des questions ? tchouchki_ sur discord
+Des questions ? 
+ - tchouchki_ sur discord (auteur d'origine)
+ - kailhou sur discord
 
 A bientot
