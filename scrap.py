@@ -84,12 +84,22 @@ if __name__ == '__main__':
         'https://amour-gloire-et-dragons.fandom.com/fr/wiki/Elson_de_l%27Huntz': 'Elson_de_l\'Huntz',
         'https://amour-gloire-et-dragons.fandom.com/fr/wiki/Violette': 'Violette'
     }
+    # for organisations, construct the dictionary manually
+    orgs = {
+        'https://amour-gloire-et-dragons.fandom.com/fr/wiki/AVPeuH': 'AVPeuH',
+        'https://amour-gloire-et-dragons.fandom.com/fr/wiki/Le_clan_Sugi': 'Le_clan_Sugi',
+        'https://amour-gloire-et-dragons.fandom.com/fr/wiki/La_Fl%C3%A8che_(institution)': 'La_Fleche_(institution)',
+        'https://amour-gloire-et-dragons.fandom.com/fr/wiki/Le_clan_du_Z%C3%A9phyr': 'Le_clan_du_Zephyr',
+        'https://amour-gloire-et-dragons.fandom.com/fr/wiki/Le_temple_des_Nons_(clerg%C3%A9)': 'Le_temple_des_Nons_(clerge)',
+        'https://amour-gloire-et-dragons.fandom.com/fr/wiki/Les_%C3%89ternit%C3%A9s': 'Les_Eternites'
+    }
     # concatenate the dictionaries
     pages = dict(pjs)
     pages.update(pnjs)
     pages.update(divins)
+    pages.update(orgs)
     # get pairs
     pairs = get_pairs(list(pages.keys()))
     # write data
-    gen_csv_nodes([(pjs,"PJ"),(pnjs,"PNJ"),(divins,"divin")])
+    gen_csv_nodes([(pjs,"PJ"),(pnjs,"PNJ"),(orgs,"organisation"),(divins,"divinites")])
     gen_csv_links(pairs)
